@@ -1,0 +1,82 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Welcome to Math Mania</title>
+</head>
+<body>
+    <div id="content">
+        <h1>Welcome to Math Mania, where the fun begins!</h1>
+        <h2>Coose a topic below to start playing!</h2>
+        <style>
+            body{
+                background-image: url(.../../Images/math1.PNG);
+            }
+        </style>
+    </div>
+    <div id="buttons">
+        <p>
+            @Html.ActionLink("Addition", "Add",
+        null, htmlAttributes: new { @class = "addbtn" })
+        </p>
+        <style type="text/css">
+            a.addbtn {
+                background-color: deepskyblue;
+                color: black;
+                display: inline-block;
+                padding: 24px 48px 24px 48px;
+                text-decoration: none;
+            }
+        </style>
+        <p>
+            @Html.ActionLink("Subtraction", "Sub",
+        null, htmlAttributes: new { @class = "subbtn" })
+        </p>
+        <style type="text/css">
+            a.subbtn {
+                background-color: orangered;
+                color: black;
+                display: inline-block;
+                padding: 24px 40px 24px 40px;
+                text-decoration: none;
+            }
+        </style>
+        <p>
+            @Html.ActionLink("Comparison", "Com",
+        null, htmlAttributes: new { @class = "combtn" })
+        </p>
+        <style type="text/css">
+            a.combtn {
+                background-color: yellow;
+                color: black;
+                display: inline-block;
+                padding: 24px 38px 24px 38px;
+                text-decoration: none;
+            }
+        </style>
+        <p>
+            @Html.ActionLink("Money", "Money",
+        null, htmlAttributes: new { @class = "moneybtn" })
+        </p>
+        <style type="text/css">
+            a.moneybtn {
+                background-color: green;
+                color: black;
+                display: inline-block;
+                padding: 24px 53px 24px 53px;
+                text-decoration: none;
+            }
+        </style>
+    </div>
+    <style>
+        #buttons{
+            display: inline-block;
+        }
+    </style>
+</body>
+</html>
